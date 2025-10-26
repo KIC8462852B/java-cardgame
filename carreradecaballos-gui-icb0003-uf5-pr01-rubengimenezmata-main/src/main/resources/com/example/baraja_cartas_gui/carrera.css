@@ -1,0 +1,5 @@
+.background-borderPane {
+    -fx-background-image: url('tapete.jpg');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}

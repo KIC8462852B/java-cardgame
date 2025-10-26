@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.example.baraja_cartas_gui.WelcomeController"
+           stylesheets="@welcome.css"
+           styleClass="welcome-pane">
+    <ImageView fx:id="fondoCaballos" fitWidth="400" fitHeight="300" preserveRatio="false" />
+    <VBox alignment="CENTER" spacing="20" styleClass="button-container">
+        <Button text="Empezar partida" fx:id="empezarPartida" onAction="#onHelloButtonClick" prefWidth="200" />
+        <Button text="Salir" onAction="#onExitButtonClick" prefWidth="200" />
+    </VBox>
+</StackPane>

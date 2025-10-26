@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      alignment="CENTER"
+      spacing="15"
+      prefWidth="500"
+      prefHeight="300"
+      fx:controller="com.example.baraja_cartas_gui.ConfiguracionController">
+    <children>
+        <Label text="Configuración de la partida" style="-fx-font-size: 18;" />
+
+        <!-- Campo para nombre del jugador -->
+        <HBox alignment="CENTER" spacing="10">
+            <Label text="Nombre del Jugador:" />
+            <TextField fx:id="nombreJugadorField" promptText="Introduce tu nombre" />
+        </HBox>
+
+        <!-- Campo para apuesta -->
+        <HBox alignment="CENTER" spacing="10">
+            <Label text="Apuesta:" />
+            <TextField fx:id="apuestaField" promptText="Introduce tu apuesta" />
+        </HBox>
+
+        <!-- Botones -->
+        <HBox alignment="CENTER" spacing="20">
+            <Button text="Empezar Carrera" onAction="#onStartRace" />
+            <Button text="Salir" onAction="#onExitButtonClick" />
+        </HBox>
+    </children>
+</VBox>

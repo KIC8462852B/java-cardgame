@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="600" prefWidth="1000" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.baraja_cartas_gui.CarreraController">
+
+    <children>
+        <ImageView fx:id="fondoTapete" fitHeight="600" fitWidth="1000" preserveRatio="false" />
+    </children>
+
+    <center>
+        <GridPane fx:id="pistaCarrera" alignment="CENTER" hgap="10" vgap="10">
+            <columnConstraints>
+                <ColumnConstraints minWidth="80" />
+                <ColumnConstraints minWidth="80" />
+                <ColumnConstraints minWidth="80" />
+                <ColumnConstraints minWidth="80" />
+                <ColumnConstraints minWidth="80" />
+                <ColumnConstraints minWidth="80" />
+                <ColumnConstraints minWidth="80" />
+                <ColumnConstraints minWidth="80" />
+                <ColumnConstraints minWidth="80" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="100" />
+                <RowConstraints minHeight="100" />
+                <RowConstraints minHeight="100" />
+                <RowConstraints minHeight="100" />
+            </rowConstraints>
+            <!-- Carriles -->
+            <ImageView fx:id="caballo1" fitHeight="80" fitWidth="80" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <ImageView fx:id="caballo2" fitHeight="80" fitWidth="80" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <ImageView fx:id="caballo3" fitHeight="80" fitWidth="80" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <ImageView fx:id="caballo4" fitHeight="80" fitWidth="80" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        </GridPane>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER" spacing="20" style="-fx-padding: 10;">
+            <VBox alignment="CENTER_LEFT" prefWidth="300" spacing="10">
+                <Label fx:id="cartaCrupierLabel" text="El crupier ha sacado la carta: " textFill="#f5efef" wrapText="true">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font></Label>
+            </VBox>
+
+            <VBox alignment="CENTER" spacing="10">
+                <HBox alignment="CENTER" spacing="10">
+                    <Button fx:id="botonJugar" onAction="#jugarRonda" text="Jugar Ronda" />
+                    <Button onAction="#onExitButtonClick" text="Salir" />
+                </HBox>
+            </VBox>
+
+            <VBox alignment="CENTER_RIGHT" prefWidth="300" spacing="10">
+                <Label fx:id="actionLabel" text="Genera mensaje de lo que sale del mazo" textFill="#fcf9f9" wrapText="true">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font></Label>
+            </VBox>
+        </HBox>
+    </bottom>
+</BorderPane>
