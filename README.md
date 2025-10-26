@@ -1,68 +1,62 @@
-# java-cardgame
+# 🐎 Horse Race Game  
 
-🐎 Horse Race Game
+> 🎴 A visual and interactive take on the classic **Horse Race** game.  
+> Place your bets, cheer for your horse, and watch the race unfold in real time!  
 
-An interactive and visual take on the classic Horse Race game 🎴 — built with a graphical interface that simulates a real-time race.
-Players can bet on their favorite horse, watch the race unfold turn by turn, and compete to win chips and climb the leaderboard.
+---
 
-🏅 Objective
+## 🏅 Objective  
 
-Each round, cards from the Spanish deck determine which horse advances or falls behind.
-The first horse to cross the finish line wins the race, and the players who bet on it share the prize pool.
+In this game, cards from the **Spanish deck** determine which horse advances or falls behind.  
+The **first horse to cross the finish line** wins — and players who bet on it share the prize pool.  
 
-🚀 How to Play
+---
 
-Start the Game:
-Create your players (human and/or bots) from the graphical interface and assign names or roles.
+## 🚀 How to Play  
 
-Place Bets:
-Choose a horse to bet on and decide how many chips to wager.
+1. **Start the Game** — Create players (human and/or bots) using the graphical interface and assign names or roles.  
+2. **Place Bets** — Choose your horse and decide how many chips to wager.  
+3. **Start the Race** — Watch the horses move forward or backward based on the drawn cards.  
+4. **Race Progress** — Cards are drawn each turn until a horse reaches the finish line.  
+5. **End of Race** — View results, check rankings, and decide whether to play another round.  
 
-Start the Race:
-Watch as the horses move according to the cards drawn.
+---
 
-Race Progress:
-Cards are drawn each turn until a horse reaches the finish line.
+## 📝 Game Rules  
 
-End of Race:
-Discover the winning horse, review player rankings, and choose whether to play another round.
+- **Player Requirements:**  
+  - At least one human player.  
+  - Minimum of 2 and maximum of 6 total players (humans + bots).  
 
-📝 Game Rules
+- **Turn-based Gameplay:**  
+  Each round represents a turn. The last drawn card determines which horse moves.  
 
-Player Requirements:
-Minimum of one human player and two total participants.
-Maximum of six players (humans + bots).
+- **Movement Mechanics:**  
+  - The horse matching the suit of the drawn card advances one square.  
+  - Every **5th turn**, all horses move **backward** one square.  
 
-Turn-based Gameplay:
-Each round represents a turn. The last card drawn determines which horse moves.
+- **Winning Condition:**  
+  The first horse to reach the finish line wins, and bets are distributed among players who chose the winning horse.  
 
-Movement Mechanics:
-The horse matching the suit of the drawn card advances one square.
-Every 5th turn, horses move backward one square instead.
+---
 
-Winning Condition:
-The first horse to reach the finish line wins, and the betting pool is shared among the winning players.
+## ✨ Features  
 
-✨ Features
+- 🧑‍🤝‍🧑 **Multiplayer:** Supports 2–6 players (human or AI).  
+- 💰 **Betting System:** Place bets before each race.  
+- 🏆 **Player Ranking:** Rankings update after every race based on total bankroll.  
+- 🗣️ **Race Narration:** Real-time commentary displayed in the console.  
+- 🔥 **Elimination Mode:** Players with zero chips are removed from the game.  
+- 🎨 **Graphical Interface:** Real-time animations and an enhanced visual experience.  
 
-🧑‍🤝‍🧑 Multiplayer: 2–6 players (human or AI).
+---
 
-💰 Betting System: Place bets before each race.
+## 🧩 Tech Stack  
 
-🏆 Player Rankings: Track accumulated bankrolls after every race.
+- **Language:** Java  
+- **UI Framework:** JavaFX  
+- **Architecture:** Object-Oriented Programming (OOP)  
+- **Mechanics:** Custom card deck, betting system, and turn-based race logic  
 
-🗣️ Race Narration: Console provides dynamic commentary and updates.
+---
 
-🔥 Elimination: Players with zero chips are eliminated.
-
-🎨 Graphical Interface: Real-time animations and an enhanced visual experience.
-
-🧩 Tech Stack (optional section)
-
-(Add this if you want to show technologies used)
-
-Java / JavaFX (for GUI)
-
-OOP design and event-driven logic
-
-Custom card and betting system
